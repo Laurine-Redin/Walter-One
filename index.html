@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang = "en">
+
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel = "stylesheet" href = "style/style.css">
+  <link href = "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel = "stylesheet">
+  <link rel = "icon" type = "image/png" sizes = "32x32" href = "assets/machine-learning.png">
+  <title> Walter One </title>
+</head>
+
+<body class = "antialiased">
+
+  <!--   BARRE HAUT   -->
+  <nav class = "bg-white">
+    <div class = "max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-b-2 border-grey">
+      <div class = "relative flex items-center justify-between h-16">
+        <div class = "flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+
+          <!--   logo et marque   -->
+          <div class = "flex flex-row absolute inset-y-0 left-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <img class = "block h-8 w-auto" src = "assets/machine-learning.png"/>
+            <a class = "ml-0 px-3 py-1"> Walter One </a>
+          </div>
+
+          <!--   catégories   -->
+          <div class = "hidden sm:block sm:ml-6">
+            <div class = "flex">
+              <a href = "#myhome"
+                class = "ml-4 px-3 py-2 rounded-md bg-none text-sm font-medium leading-5 
+            text-gray-600 border-white hover:border-white border-b-4 hover:border-blue-400 focus:border-blue-400 focus:text-blue-400 transition duration-150 ease-in-out"> My Home </a>
+              <a href = "#deposits"
+                class = "ml-4 px-3 py-2 rounded-md bg-none text-sm font-medium leading-5 text-gray-600 border-white hover:border-white border-b-4 hover:border-blue-400 focus:border-blue-400 focus:text-blue-400 transition duration-150 ease-in-out"> Deposits </a>
+              <a href = "#appliations"
+                class = "ml-4 px-3 py-2 rounded-md bg-none text-sm font-medium leading-5 text-gray-600 border-white hover:border-white border-b-4 hover:border-blue-400 focus:border-blue-400 focus:text-blue-400 transition duration-150 ease-in-out"> Applications </a>
+              <a href = "#payments"
+                class = "ml-4 px-3 py-2 rounded-md bg-none text-sm font-medium leading-5 text-gray-600 border-white hover:border-white border-b-4 hover:border-blue-400 focus:border-blue-400 focus:text-blue-400 transition duration-150 ease-in-out"> Payments </a>
+            </div>
+          </div>
+        </div>
+
+        <!--   enveloppe et bulle photo   -->
+        <div class = "absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <button
+            class = "p-1 border-2 border-transparent bg-none text-white rounded-full hover:text-white hover:border-white border-b-4 hover:border-blue-400 rounded focus:outline-none focus:text-white focus:bg-gray-600 transition duration-150 ease-in-out">
+            <img class = "h-6 w-6" src = "assets/envelope.png"/>
+          </button>
+          <div class = "flex text-sm border-2 border-transparent rounded-full">
+              <img class = "h-10 w-10 rounded-full" src = "assets/profile.png"/>
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--   DEPOSIT   -->
+
+  <div class = "bg-gray-50 flex items-center justify-between h-24">
+    <div class = "flex text-gray-700 text-center md:px-2 md:py-2 m-2 md:m-0">
+      <!--   Text   -->
+      <h2 class = "text-3xl leading-tight font-bold  text-grey-900">
+        Active deposits (2) 
+      </h2>
+    </div>
+    <!--   boutton   -->
+    <div class = "flex text-gray-700 text-center md:py-2 m-4 m-2">
+      <button class = "bg-green-400 hover:bg-green-700 text-white text-3xl md:text-base font-bold px-6 md:px-4 md:py-2 rounded">
+        + 
+        <span class = "hidden md:inline-block"> Start new deposit </span>
+      </button>
+    </div>
+  </div>
+
+  <!--   TABLEAU HEADER   -->
+
+  <div class = "px-8">
+    <div class = "flex flex-col">
+      <div class = "my-1 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+        <div class = "align-middle inline-block min-w-full overflow-hidden sm:rounded-lg border-b border-gray-200">
+          <table class = "table-fixed min-w-full">
+            <thead class = "bg-gray-300 rounded-md">
+              <!--   catégories tableau   -->
+              <th class = "w-3/12 px-6 py-3 font-extrabold text-left text-xs leading-4  text-blue-900 uppercase tracking-wider table-cell md:hidden">
+                 PROPERTY </th>
+              <th class = "w-1/12 px-2 py-3 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider hidden md:table-cell">
+                 TENANTS </th>
+              <th class = "w-1/12 px-2 py-3 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider hidden md:table-cell">
+                 START-DATE </th>
+              <th class = "w-1/12 px-2 py-3 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider hidden md:table-cell">
+                 RATE </th>
+              <th class = "w-1/12 px-2 py-3 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider hidden md:table-cell">
+                 DEPOSIT </th>
+              <th class = "w-2/12 px-2 py-3 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider hidden md:table-cell">
+                 STATUS </th>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--   TABLEAU CORPS   -->
+
+  <div class = "px-8">
+    <div class = "flex flex-col">
+      <div class = "my-1 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+        <div class = "align-middle inline-block min-w-full overflow-hidden sm:rounded-lg border-b border-gray-200">
+          <table class = "table-fixed min-w-full">
+            <tbody class = "bg-white">
+
+              <!--   première ligne tableau   -->
+              <tr>
+                <td class = "w-3/12 px-6 py-4 whitespace-no-wrap border-b border-gray-200 table-cell md:hidden">
+                  <div class = "flex items-center">
+                    <div class = "flex-shrink-0 h-16 w-16">
+                      <img class = "h-16 w-16 rounded-full" src = "assets/property2.png"/>
+                    </div>
+
+                    <div class = "ml-4">
+                      <div class = "text-sm leading-5 font-medium text-blue-900 font-bold"> 221B Baker Street, London </div>
+                      <div class = "text-xs leading-5 text-gray-600 font-bold"> Furnished </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td class = "w-1/12 px-2 py-4 whitespace-no-wrap border-b border-gray-200 hidden md:table-cell">
+                  <div class = "text-sm leading-5 text-blue-900 font-bold"> NAWAK </div>
+                  <div class = "text-xs leading-5 text-gray-600 font-bold"> Michel </div>
+                </td>
+
+                <td class = "w-1/12 px-2 py-4 whitespace-no-wrap border-b border-gray-200 hidden md:table-cell">
+                  <div class = "text-sm leading-5 text-blue-900 font-bold"> 22 January 2020 </div>
+                  <div class = "text-xs leading-5 text-gray-600 font-bold"> Start date </div>
+                </td>
+
+                <td class = "w-1/12 px-2 py-4 whitespace-no-wrap border-b border-gray-200 hidden md:table-cell">
+                  <div class = "text-sm leading-5 text-blue-900 inline font-bold"> 800 $ </div>
+                  <div class = "text-sm leading-5 text-teal-400 inline font-bold"> + 30 $ </div>
+                  <div class = "text-xs leading-5 text-gray-600 font-bold"> Monthly rent </div>
+                </td>
+
+                <td class = "w-1/12 px-2 py-4 whitespace-no-wrap border-b border-gray-200 hidden md:table-cell">
+                  <div class = "text-sm leading-5 text-blue-900 font-bold"> 800 $ </div>
+                  <div class = "text-xs leading-5 text-gray-600 font-bold"> Initial deposit </div>
+                </td>
+
+                <td class = "w-2/12 px-2 py-4 whitespace-no-wrap border-b border-gray-200 hidden md:table-cell">
+                  <div class = "flex items-center">
+                    <div class = "w-5/6">
+                      <img class = "block h-4 w-auto inline" src = "assets/pastille_orange.png"/>
+                      <div class = "text-sm leading-5 text-blue-900 font-bold inline"> Waiting tenant validation </div>
+                      <div class = "text-xs leading-5 text-gray-600 font-bold"> Status </div>
+                    </div>
+
+                    <div class = "w-1/6">
+                      <img class = "h-6 w-4" src = "assets/fleche.png"/>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!--   seconde ligne tableau   -->
+              <tr>
+                <td class = "w-3/12 px-6 py-4 whitespace-no-wrap border-b border-gray-200 table-cell md:hidden">
+                  <div class = "flex items-center">
+                    <div class = "flex-shrink-0 h-16 w-16">
+                      <img class = "h-16 w-16 rounded-full" src = "assets/property1.png"/>
+                    </div>
+
+                    <div class = "ml-4">
+                      <div class = "text-sm leading-5 font-medium text-blue-900 font-bold"> 365 Park Avenu, New York </div>
+                      <div class = "text-xs leading-5 text-gray-500 font-bold"> Furnished </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td class = "w-1/12 px-2 py-4 whitespace-no-wrap border-b border-gray-200 hidden md:table-cell">
+                  <div class = "text-sm leading-5 text-blue-900 font-bold"> PINATTSÜ </div>
+                  <div class = "text-xs leading-5 text-gray-600 font-bold"> Billy </div>
+                </td>
+
+                <td class = "w-1/12 px-2 py-4 whitespace-no-wrap border-b border-gray-200 hidden md:table-cell">
+                  <div class = "text-sm leading-5 text-blue-900 font-bold"> 11 November 2019 </div>
+                  <div class = "text-xs leading-5 text-gray-600 font-bold"> Start date </div>
+                </td>
+
+                <td class = "w-1/12 px-2 py-4 whitespace-no-wrap border-b border-gray-200 hidden md:table-cell">
+                  <div class = "text-sm leading-5 text-blue-900 inline font-bold"> 2000$ </div>
+                  <div class = "text-sm leading-5 text-teal-400 inline font-bold"> + 300 $ </div>
+                  <div class = "text-xs leading-5 text-gray-600 font-bold"> Monthly rent </div>
+                </td>
+
+                <td class = "w-1/12 px-2 py-4 whitespace-no-wrap border-b border-gray-200 hidden md:table-cell">
+                  <div class = "text-sm leading-5 text-blue-900 font-bold"> 4600$ </div>
+                  <div class = "text-xs leading-5 text-gray-600 font-bold"> Initial deposit </div>
+                </td>
+
+                <td class = "w-2/12 px-2 py-4 whitespace-no-wrap border-b border-gray-200 hidden md:table-cell">
+                  <div class = "flex items-center">
+                    <div class = "w-5/6">
+                      <img class = "block h-4 w-auto inline" src = "assets/pastille_verte.png"/>
+                      <div class = "text-sm leading-5 text-blue-900 font-bold inline"> Waiting inital deposit </div>
+                      <div class = "text-xs leading-5 text-gray-600 font-bold"> Status </div>
+                    </div>
+
+                    <div class = "w-1/6">
+                      <img class= " h-6 w-4" src = "assets/fleche.png"/>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--   BOITES HEADER   -->
+
+  <div>
+    <div class = "bg-white">
+      <div class = "flex flex-col">
+        <div class = "mt-2 text-3xl font-extrabold tracking-tight text-blue-900 sm:px-10 text-center lg:py-4 lg:px-6 lg:flex lg:items-center lg:justify-between">
+         Create your own opportunities 
+        </div>
+
+        <!--   BOITES   -->
+
+        <div class = " flex items-center justify-center px-4 px-4">
+          <div class = "grid grid-cols-1 md:grid-cols-3 m-5">
+
+            <!--   première boite   -->
+            <div class = "flex flex-col bg-gray-300 rounded-md w-15 h-15 items-center m-4 p-4">
+              <h2 class = "text-center text-3xl font-extrabold text-blue-900">
+               Search for a home 
+              </h2>
+              <img class = "h-32 w-32" src = "assets/undraw_house_searching_n8mp.svg"/>
+              <div class = "flex text-center text-m font-semibold"> Looking for a new place to live ? 
+              </div>
+
+              <div class = "flex text-center text-m py-2"> With out research methodology, find a place that fits your need in less that 2 weeks. 
+              </div>
+
+              <div class = "mt-6">
+                <button class = "flex justify-center py-2 px-4 border text-sm font-medium rounded-md text-white bg-blue-900 hover:bg-indigo-500 focus:border-blue-900 active:bg-indigo-700 transition duration-150 ease-in-out">
+                   Let's search! 
+                </button>
+              </div>
+            </div>
+
+            <!--   seconde boite   -->
+            <div class = "flex flex-col bg-gray-300 rounded-md w-15 h-15 items-center m-4 p-4">
+              <h2 class = "text-center text-3xl font-extrabold text-blue-900">
+                 Put your house to rent 
+              </h2>
+              <img class = "h-32 w-32" src = "assets/undraw_for_sale_viax.svg"/>
+              <div class = "flex text-center text-m font-semibold"> Put your house to rent 
+              </div>
+
+              <div class = "flex text-center text-m py-2"> Find someone or a family to rent your property and make a profit of your property and make a profit of your sqfeets ! 
+              </div>
+
+              <div class = "mt-6">
+                <button class = "flex justify-center py-2 px-4 border text-sm font-medium rounded-md text-white bg-blue-900 hover:bg-indigo-500 focus:border-blue-900 active:bg-indigo-700 transition duration-150 ease-in-out">
+                 Let's rent! 
+                </button>
+              </div>
+            </div>
+
+            <!--   troisième boite   -->
+            <div class = "flex flex-col bg-gray-300 rounded-md w-15 h-15 items-center m-4 p-4">
+              <h2 class = "text-center text-3xl font-extrabold text-blue-900">
+                 Become a landlord 
+              </h2>
+              <img class = "h-32 w-32" src = "assets/undraw_under_construction_46pa.svg"/>
+              <div class = "flex text-center text-m font-semibold"> Do not own a home yet ? </div>
+              <div class = "flex text-center text-m py-2"> We have partenered with building companies to provide you the best price / quality ration. 
+              </div>
+
+              <div class = "mt-6">
+                <button class = "flex justify-center py-2 px-4 border text-sm font-medium rounded-md text-white bg-blue-900 hover:bg-indigo-500 focus:border-blue-900 active:bg-indigo-700 transition duration-150 ease-in-out">
+                   Let's build! 
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--   FOOTER   -->
+
+  <div class = "flex flex-col bg-gray-200 md:rounded-lg ">
+    <div class = "flex flex-col md:my-6 md:items-center md:flex-row pl-12">
+      <div class = "flex flex-col md:w-1/2 my-6 md:px-12">
+        <div class = "flex text-sm font-thin mb-4">
+         Proudly powered by teams at : 
+        </div>
+
+        <div class = "flex flex-row md:items-center">
+          <img class = "h-24 w-24" src="assets/machine-learning.png"/>
+            <div class = "flex flex-col px-4">
+              <div class = "flex items-center text-3xl font-bold">
+                 Walter One 
+              </div>
+
+              <div class = "flex items-center text-base font-light text-gray-500">
+                 Your renting compagny 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--   cliquables   -->
+        <div class = "flex flex-col md:w-1/4 md:mt-6">
+          <a href = "" class="flex h-16 items-center md:h-1/4 hover:underline transition duration-150 ease-in-out"> Home </a>
+          <a href = "" class="flex h-16 items-center md:h-1/4 hover:underline transition duration-150 ease-in-out"> Deposit </a>
+          <a href = "" class="flex h-16 items-center md:h-1/4 hover:underline transition duration-150 ease-in-out"> Applications </a>
+          <a href = "" class="flex h-16 items-center md:h-1/4 hover:underline transition duration-150 ease-in-out"> Payments </a>
+        </div>
+
+        <div class = "flex flex-col md:w-1/4 md:border-r-2 md:border-l-2 border-gray-600 md:mt-6 md:pl-8">
+          <a href = "" class="flex h-16 items-center md:h-1/4 hover:underline transition duration-150 ease-in-out"> Start a desposit </a>
+          <a href = "" class="flex h-16 items-center md:h-1/4 hover:underline transition duration-150 ease-in-out"> Search a home </a>
+          <a href = "" class="flex h-16 items-center md:h-1/4 hover:underline transition duration-150 ease-in-out"> Rent a house </a>
+          <a href = "" class="flex h-16 items-center md:h-1/4 hover:underline transition duration-150 ease-in-out"> Build a house </a>
+        </div>
+
+        <div class = "flex flex-col justify-start md:w-1/4 md:mt-6 md:pl-8">
+          <a href = "" class="flex h-16 items-center md:h-1/2 hover:underline transition duration-150 ease-in-out"> Legal </a>
+          <a href = "" class="flex h-16 items-center md:h-1/2 hover:underline transition duration-150 ease-in-out"> Contact </a>
+        </div>
+      </div>
+
+      <div class = "flex self-center text-center my-4">
+        <p> All right reserved to 
+          <a href = "" class = "text-blue-400 hover:underline transition duration-150 ease-in-out"> Walter One compagny </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
